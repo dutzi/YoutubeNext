@@ -1,0 +1,19 @@
+.video-list-item a.play-next-button:before {
+	content: '▶ Play Next';
+}
+
+.video-list-item.is-playing-next a.play-next-button:before {
+	content: '✓ Playing Next';
+}
+
+.video-list-item a.play-next-button {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 88%;
+	display: none;
+}
+
+.video-list-item:hover a.play-next-button, .video-list-item.is-playing-next a.play-next-button {
+	display: block;
+}
